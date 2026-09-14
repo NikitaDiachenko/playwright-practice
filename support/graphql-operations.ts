@@ -53,3 +53,16 @@ export const CharactersArray = `query Characters ($page: Int){
         }
     }
 }`
+export const CreatePost = `mutation CreatePost ($input:CreatePostInput!){
+    createPost(input: $input) {
+        id
+        title
+        body
+    }
+}`
+export const UpdatePost = `mutation UpdatePost ($id:ID!, $input: UpdatePostInput!){
+    updatePost(id: $id, input: $input) {
+        title
+        id
+    }
+}`
