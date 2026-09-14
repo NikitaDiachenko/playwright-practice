@@ -1,0 +1,11 @@
+{
+  "name": "practive",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.x.x",
+    "@types/node": "^20.x.x",
+    "tsx": "^4.x.x",
+    "typescript": "^5.x.x"
+  }
+}
