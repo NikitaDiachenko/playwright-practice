@@ -5,7 +5,7 @@ export async function graphQLRequest(
     query: string, 
     variables?: Record<string, any>
 ) {
-    const response = await request.post("/api", {
+    const response = await request.post("", {
         data: {
             query,
             variables

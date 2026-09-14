@@ -33,3 +33,23 @@ export const GetPhotoDetails = `query Photo ($id: ID!){
         }
     }
 }`
+export const CharacterDetails = `query Character ($id:ID!){
+    character(id: $id) {
+        id
+        name
+        status
+        species
+        origin {
+            name
+        }
+    }
+}`
+export const CharactersArray = `query Characters ($page: Int){
+    characters(page: $page) {
+        results {
+            id
+            name
+            gender
+        }
+    }
+}`
